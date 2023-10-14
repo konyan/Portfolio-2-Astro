@@ -7,10 +7,7 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 
 export function Avatar(props) {
-	const { headFollow, cursorFollow } = {
-		headFollow: false,
-		cursorFollow: false,
-	};
+	
 	const group = useRef();
 	const { nodes, materials } = useGLTF("./models/sample.glb");
 
@@ -24,13 +21,9 @@ export function Avatar(props) {
 	);
 
 	 useFrame((state) => {
-	 	if (headFollow) {
-	 		group.current.getObjectByName("Head").lookAt(0,100,0);
-	 	}
-	 	if (cursorFollow) {
-	 		const target = new THREE.Vector3(state.mouse.x, state.mouse.y, 1);
+	 		group.current.getObjectByName("Head").lookAt(0,0,2);
+	 		const target = new THREE.Vector3(-1, 0, 10);
 	 		group.current.getObjectByName("Spine2").lookAt(target);
-	 	}
 	 });
 
 	useEffect(() => {
@@ -42,7 +35,7 @@ export function Avatar(props) {
 
 	return (
 		<group {...props} ref={group} dispose={null}>
-			<group>
+			<group position={[1, 0, 0]}>
 				<primitive object={nodes.Hips} />
 				<skinnedMesh
 					geometry={nodes.Wolf3D_Body.geometry}

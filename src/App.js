@@ -5,6 +5,7 @@ import { socials, projects, resume, menus } from "./utils/data";
 import Nav from "./components/Nav";
 import dayjs from "dayjs";
 import Charactor from "./components/Charactor";
+import Profile from "./components/Profile";
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 						</li>
 					))}
 				</ul>
+				<Profile />
 			</div>
 		</>
 	);
