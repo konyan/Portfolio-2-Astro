@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import dayjs from "dayjs";
 import Charactor from "./components/Charactor";
 import Profile from "./components/Profile";
+import Project from "./components/Project";
 
 function App() {
 	return (
@@ -16,7 +17,7 @@ function App() {
 			<div class="main__container">
 				<ul class="social">
 					{socials.map((s) => (
-						<li>
+						<li key={s.url}>
 							<a href={s.url} target="_blank" rel="noreferrer">
 								<img src={s.image} alt={s.name} />
 							</a>
@@ -24,6 +25,7 @@ function App() {
 					))}
 				</ul>
 				<Profile />
+				<Project />
 			</div>
 		</>
 	);
