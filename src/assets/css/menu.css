@@ -1,0 +1,310 @@
+.navbar__menu {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	gap: 1.8rem;
+	margin-bottom: 4rem;
+}
+
+.navigation > a {
+	margin-top: 2rem;
+}
+
+.navbar__link {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #707070;
+	transition: 250ms ease all;
+	flex-direction: column;
+}
+
+.navbar__item {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0.6rem 0;
+}
+
+.navbar__link p {
+	color: var(--accent-color);
+	opacity: 0.5;
+	font-family: "Bagoss", sans-seri;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar__link span {
+	color: rgb(169, 169, 169);
+	padding-top: 0.5rem;
+	font-family: "Bagoss", sans-seri;
+}
+
+.navbar__link:hover span {
+	color: white;
+}
+
+.navbar__link:hover p {
+	color: white;
+	opacity: 1;
+}
+
+.navbar__link:hover {
+	color: #fff;
+}
+.navbar:not(:hover) .navbar__link:focus span,
+.navbar__link:hover span {
+	opacity: 1;
+	transform: translate(0);
+}
+.navbar__menu {
+	position: relative;
+}
+
+.active {
+	opacity: 1 !important;
+	width: 90%;
+	height: 4rem;
+	background: var(--accent-color);
+	border-radius: 4px;
+	transition: 250ms cubic-bezier(1, 0.2, 0.1, 1.2) all;
+}
+
+.active span {
+	color: white;
+}
+
+.active p {
+	color: white;
+	opacity: 1;
+}
+
+.navbar__item:last-child:before {
+	content: "";
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+	top: 0;
+	left: 5%;
+	width: 90%;
+	height: 5rem;
+	background: var(--accent-color);
+	border-radius: 4px;
+	transition: 250ms cubic-bezier(1, 0.2, 0.1, 1.2) all;
+}
+.navbar__item:first-child:nth-last-child(1):hover ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(1) ~ li:hover ~ li:last-child:before {
+	opacity: 1;
+}
+.navbar__item:first-child:nth-last-child(1):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(1) ~ li:last-child:hover:before {
+	opacity: 1;
+}
+.navbar__item:first-child:nth-last-child(1):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(1) ~ li:last-child:hover:before {
+	top: 0%;
+	animation: gooeyEffect-1 250ms 1;
+}
+@keyframes gooeyEffect-1 {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(0.5, 1.5);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+.navbar__item:first-child:nth-last-child(2):hover ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(2) ~ li:hover ~ li:last-child:before {
+	opacity: 1;
+}
+.navbar__item:first-child:nth-last-child(2):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(2) ~ li:last-child:hover:before {
+	opacity: 1;
+}
+.navbar__item:first-child:nth-last-child(2):nth-child(1):hover
+	~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(2)
+	~ li:nth-child(1):hover
+	~ li:last-child:before {
+	top: 0%;
+	animation: gooeyEffect-1 250ms 1;
+}
+@keyframes gooeyEffect-1 {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(0.5, 1.5);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+.navbar__item:first-child:nth-last-child(2):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(2) ~ li:last-child:hover:before {
+	top: 50%;
+	animation: gooeyEffect-2 250ms 1;
+}
+@keyframes gooeyEffect-2 {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(0.5, 1.5);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+.navbar__item:first-child:nth-last-child(3):hover ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(3) ~ li:hover ~ li:last-child:before {
+	opacity: 1;
+}
+.navbar__item:first-child:nth-last-child(3):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(3) ~ li:last-child:hover:before {
+	opacity: 1;
+}
+.navbar__item:first-child:nth-last-child(3):nth-child(1):hover
+	~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(3)
+	~ li:nth-child(1):hover
+	~ li:last-child:before {
+	top: 0%;
+	animation: gooeyEffect-1 250ms 1;
+}
+@keyframes gooeyEffect-1 {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(0.5, 1.5);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+.navbar__item:first-child:nth-last-child(3):nth-child(2):hover
+	~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(3)
+	~ li:nth-child(2):hover
+	~ li:last-child:before {
+	top: 33.3333333333%;
+	animation: gooeyEffect-2 250ms 1;
+}
+@keyframes gooeyEffect-2 {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(0.5, 1.5);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+.navbar__item:first-child:nth-last-child(3):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(3) ~ li:last-child:hover:before {
+	top: 72%;
+	animation: gooeyEffect-3 250ms 1;
+}
+@keyframes gooeyEffect-3 {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(0.5, 1.5);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+.navbar__item:first-child:nth-last-child(4):hover ~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(4) ~ li:hover ~ li:last-child:before {
+	opacity: 1;
+}
+.navbar__item:first-child:nth-last-child(4):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(4) ~ li:last-child:hover:before {
+	opacity: 1;
+}
+.navbar__item:first-child:nth-last-child(4):nth-child(1):hover
+	~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(4)
+	~ li:nth-child(1):hover
+	~ li:last-child:before {
+	top: 0%;
+	animation: gooeyEffect-1 250ms 1;
+}
+@keyframes gooeyEffect-1 {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(0.5, 1.5);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+.navbar__item:first-child:nth-last-child(4):nth-child(2):hover
+	~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(4)
+	~ li:nth-child(2):hover
+	~ li:last-child:before {
+	top: 25%;
+	animation: gooeyEffect-2 250ms 1;
+}
+@keyframes gooeyEffect-2 {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(0.5, 1.5);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+.navbar__item:first-child:nth-last-child(4):nth-child(3):hover
+	~ li:last-child:before,
+.navbar__item:first-child:nth-last-child(4)
+	~ li:nth-child(3):hover
+	~ li:last-child:before {
+	top: 50%;
+	animation: gooeyEffect-3 250ms 1;
+}
+@keyframes gooeyEffect-3 {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(0.5, 1.5);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+.navbar__item:first-child:nth-last-child(4):last-child:hover:before,
+.navbar__item:first-child:nth-last-child(4) ~ li:last-child:hover:before {
+	top: 75%;
+	animation: gooeyEffect-4 250ms 1;
+}
+@keyframes gooeyEffect-4 {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(0.5, 1.5);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}

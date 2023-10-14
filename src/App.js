@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Canvas } from "@react-three/fiber";
+import { Experience } from "./components/Experience";
+import { useEffect, useRef } from "react";
+import { socials, projects, resume, menus } from "./utils/data";
+import Nav from "./components/Nav";
+import dayjs from "dayjs";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<Nav />
+
+			<div class="main__container">
+				<ul class="social">
+					{socials.map((s) => (
+						<li>
+							<a href={s.url} target="_blank" rel="noreferrer">
+								<img src={s.image} alt={s.name} />
+							</a>
+						</li>
+					))}
+				</ul>
+			</div>
+		</>
+	);
 }
 
 export default App;
