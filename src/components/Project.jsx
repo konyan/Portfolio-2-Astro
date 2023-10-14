@@ -8,7 +8,7 @@ return (
 			<div className="grid-wrapper">
 				{projects.map((project) => {
 					return (
-						<div className={project.className} key={project.name}>
+						<div className={project.class} key={project.name}>
 							<img src={project.img} alt={project.name} />
 							{project.isOpen && (
 								<strong>

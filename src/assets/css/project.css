@@ -2,7 +2,7 @@
 	font-size: 1.4rem;
 	font-weight: 600;
 	margin: 8rem auto 3.2rem;
-	font-family: "Bagoss", sans-seri;
+	font-family: "Barlow Semi Condensed", sans-seri;
 }
 .projects__container {
 	height: 100vh;
@@ -12,14 +12,13 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-width: 2px;
 	box-shadow: var(--accent-color) 0px 0px 0px;
-	border-color: var(--accent-color);
-
 	border-radius: 0.4rem;
 	transition: box-shadow 0.3s ease-out;
 	position: relative;
 	cursor: pointer;
+	border: 2px solid var(--accent-color);
+	overflow: hidden;
 }
 
 .grid-wrapper > div:hover {
@@ -37,6 +36,7 @@
 	font-weight: 600;
 	font-size: 1rem;
 	font-family: "Bagoss", sans-seri;
+	margin: 0;
 }
 
 .grid-wrapper > div > img {
@@ -52,7 +52,6 @@
 	grid-auto-rows: 200px;
 	grid-auto-flow: dense;
 	width: 100%;
-	padding: 0 0.5rem;
 	overflow-y: scroll;
 	height: 74vh;
 }

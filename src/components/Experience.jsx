@@ -11,7 +11,9 @@ export const Experience = () => {
 	return (
 		<>
 			<OrbitControls
-				
+				enableZoom={false}
+        enablePan={false}
+        enableRotate={false}
 			/>
 			<color attach="background" args={["#0D1D31"]} />
 			<group position-y={-1}>
