@@ -1,9 +1,11 @@
 import { Canvas } from "@react-three/fiber";
 import { Experience } from "./Experience";
+import  Star  from './Star';
 
 const Charactor =() => {
 	return (
 		<Canvas
+    zindex={0}
 			shadows
 			camera={{ position: [0, 0, 5], fov: 30 }}
 			style={{
@@ -14,8 +16,8 @@ const Charactor =() => {
 				left: 0,
 			}}
 		>
-			<color attach="background" args={["#ececec"]} />
-			<Experience />
+    <Star/>
+    <Experience/>
 		</Canvas>
 	);
 }
