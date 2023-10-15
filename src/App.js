@@ -7,6 +7,7 @@ import Charactor from "./components/Charactor";
 import Profile from "./components/Profile";
 import Project from "./components/Project";
 import Work from "./components/Work";
+import Cursor from "./components/Cursor";
 
 function App() {
 	const scrollRef = useRef(null);
@@ -65,6 +66,7 @@ function App() {
 				<Profile forwardedRef={profileRef} />
 				<Project forwardedRef={projectRef} />
 				<Work forwardedRef={workRef} />
+				<Cursor />
 			</div>
 		</>
 	);
