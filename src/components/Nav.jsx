@@ -1,7 +1,5 @@
-import { socials, projects, resume, menus } from "../utils/data";
 
-const Nav = () =>{
-            const currentURL = window.location.href;
+const Nav = ({menus,activeMenu}) =>{
   return (
 		<>
 			<nav className="navigation">
@@ -12,7 +10,7 @@ const Nav = () =>{
 					{menus.map((menu, index) => (
 						<li
 							className={`navbar__item ${
-								currentURL.split("#")[1] === menu.url ? "active" : ""
+								activeMenu === menu.name ? "active" : ""
 							}`}
 							key={menu.url}
 						>
@@ -34,7 +32,7 @@ const Nav = () =>{
 							<a
 								href={`#${menu.url}`}
 								className={`m_navbar__link ${
-									currentURL.split("#")[1] === menu.url ? "m_active" : ""
+									activeMenu === menu.name ? "m_active" : ""
 								}`}
 							></a>
 						</li>

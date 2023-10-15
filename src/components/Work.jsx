@@ -1,9 +1,9 @@
 import {resume} from '../utils/data';
 import dayjs from 'dayjs';
 
-const Work = () =>{
-  return (
-		<section class="experience_container" id="experience">
+const Work = ({ forwardedRef }) => {
+	return (
+		<section class="experience_container" id="experience" ref={forwardedRef}>
 			<h2>
 				Work
 				<hr />
@@ -53,6 +53,6 @@ const Work = () =>{
 			</div>
 		</section>
 	);
-}
+};
 
 export default Work;
