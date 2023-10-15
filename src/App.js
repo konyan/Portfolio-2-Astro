@@ -3,10 +3,10 @@ import { Experience } from "./components/Experience";
 import { useEffect, useRef } from "react";
 import { socials, projects, resume, menus } from "./utils/data";
 import Nav from "./components/Nav";
-import dayjs from "dayjs";
 import Charactor from "./components/Charactor";
 import Profile from "./components/Profile";
 import Project from "./components/Project";
+import Work from "./components/Work";
 
 function App() {
 	return (
@@ -26,6 +26,7 @@ function App() {
 				</ul>
 				<Profile />
 				<Project />
+				<Work />
 			</div>
 		</>
 	);
