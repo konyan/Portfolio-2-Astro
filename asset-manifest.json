@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/konyan/Portfolio-2-REACT/static/css/main.3a874b44.css",
-    "main.js": "/konyan/Portfolio-2-REACT/static/js/main.f63b1de1.js",
-    "static/js/787.aeca62f9.chunk.js": "/konyan/Portfolio-2-REACT/static/js/787.aeca62f9.chunk.js",
-    "static/media/Bagoss-SemiBold.woff2": "/konyan/Portfolio-2-REACT/static/media/Bagoss-SemiBold.c2795cbb0e27e437508b.woff2",
-    "static/media/Bagoss-Medium.woff2": "/konyan/Portfolio-2-REACT/static/media/Bagoss-Medium.b2fbcfe8a6ecf41dcca5.woff2",
-    "static/media/Bagoss-Regular.woff2": "/konyan/Portfolio-2-REACT/static/media/Bagoss-Regular.daf77ba0fe33db76fb2b.woff2",
-    "index.html": "/konyan/Portfolio-2-REACT/index.html",
-    "main.3a874b44.css.map": "/konyan/Portfolio-2-REACT/static/css/main.3a874b44.css.map",
-    "main.f63b1de1.js.map": "/konyan/Portfolio-2-REACT/static/js/main.f63b1de1.js.map",
-    "787.aeca62f9.chunk.js.map": "/konyan/Portfolio-2-REACT/static/js/787.aeca62f9.chunk.js.map"
+    "main.css": "/Portfolio-2-REACT/static/css/main.a117484f.css",
+    "main.js": "/Portfolio-2-REACT/static/js/main.4c9440cc.js",
+    "static/js/787.aeca62f9.chunk.js": "/Portfolio-2-REACT/static/js/787.aeca62f9.chunk.js",
+    "static/media/Bagoss-SemiBold.woff2": "/Portfolio-2-REACT/static/media/Bagoss-SemiBold.c2795cbb0e27e437508b.woff2",
+    "static/media/Bagoss-Medium.woff2": "/Portfolio-2-REACT/static/media/Bagoss-Medium.b2fbcfe8a6ecf41dcca5.woff2",
+    "static/media/Bagoss-Regular.woff2": "/Portfolio-2-REACT/static/media/Bagoss-Regular.daf77ba0fe33db76fb2b.woff2",
+    "index.html": "/Portfolio-2-REACT/index.html",
+    "main.a117484f.css.map": "/Portfolio-2-REACT/static/css/main.a117484f.css.map",
+    "main.4c9440cc.js.map": "/Portfolio-2-REACT/static/js/main.4c9440cc.js.map",
+    "787.aeca62f9.chunk.js.map": "/Portfolio-2-REACT/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a874b44.css",
-    "static/js/main.f63b1de1.js"
+    "static/css/main.a117484f.css",
+    "static/js/main.4c9440cc.js"
   ]
 }
