@@ -2,7 +2,7 @@ const Profile = ({ forwardedRef }) => {
 	return (
 		<section id="home" ref={forwardedRef}>
 			<div class="hero__container">
-				<span class="profile_greeting">Hello,</span>
+				<span class="profile_greeting typewriter"></span>
 				<h1 class="profile_name">I'm NYAN LIN TUN</h1>
 				<p class="profile_position">
 					Front-end Developer / Open Sourceror / Blogger
